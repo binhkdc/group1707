@@ -22,13 +22,13 @@
 					<li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
 					<li class="nav-item" >
 						<div class="dropdown">
-							<a class="nav-link" href="shop.html">SHOP</button>
-								<div class="dropdown-content">
-									<a href="#">ALL PRODUCTS</a>
-									<a href="#">TOPS</a>
-									<a href="#">BOTTOMS</a>
-									<a href="#">OUTERWEAR</a>
-								</div>
+							<a class="nav-link" href="shop.html">SHOP</a>
+							<div class="dropdown-content">
+								<a href="#">ALL PRODUCTS</a>
+								<a href="#">TOPS</a>
+								<a href="#">BOTTOMS</a>
+								<a href="#">OUTERWEAR</a>
+							</div>
 						</div>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
@@ -47,38 +47,44 @@
 				</form>
 			</div>
 		</div>
-		<div class="container-fluid">
+		<div class="container-grid profile">
 			<div class="row">
-				<div class="col-12 col-sm-4 border">
-					<p>Profile Details</p>
-					<div class="text-center">
-						<img alt="img" src="images/image4.jpg" class="profile-img">
-						<p>le dang binh<br>student</p>
-						<a class="btn btn-primary" href="https://www.facebook.com/ledangbinhkdc/">Follow</a>
-						<a href="" class="btn btn-primary"><i class="fas fa-comment"></i> Message</a>
-						<hr>
-					</div>
-					<p>About</p>
-					<div>
-						<ul class="list-unstyled">
-							<li><i class="fas fa-home"></i> Lives in <a href="#">cau giay</a></li>
-							<li><i class="fas fa-suitcase"></i> Works at <a href="#">T3h</a></li>
-							<li><i class="fas fa-map-marker"></i> From <a href="#">Hanoi</a></li>
-						</ul>
-						<hr>
-					</div>
-					<p>Else where</p>
-					<div>
-						<i class="fas fa-globe"></i><a href="#"> staciehall.co</a><br>
-						<i class="fab fa-twitter"></i><a href="#"> Twitter</a><br>
-						<i class="fab fa-facebook-f"></i><a href="#"> Facebook</a><br>
-						<i class="fab fa-instagram"></i><a href="#"> Instagram</a><br>
-						<i class="fab fa-linkedin-in"></i><a href="#"> LinkedIn</a>
-					</div><br>
+				<div class="col-12 col-sm-2">
+					<p><i class="fas fa-user"></i><a href=""> Tài Khoản Của Tôi</a></p>
+					<ul class="list-unstyled">
+						<li><a class="red-my-profile" href="">Hồ Sơ</a></li>
+						<li><a class="red-my-profile" href="">Ngân Hàng</a></li>
+						<li><a class="red-my-profile" href="">Địa Chỉ</a></li>
+						<li><a class="red-my-profile" href="">Thêm Mật Khẩu</a></li>
+					</ul>
 				</div>
-				<div class="col-12 col-sm-8 border">
-					
+				<div class="col-12 my-profile col-sm-9">
+					<h4>Hồ Sơ Của Tôi</h4>
+					<p>Quản lý thông tin hồ sơ để bảo mật tài khoản</p><hr>
+					<form action="/action_page.php">
+						<label>Tên Đăng nhập:</label><br>
+						<input type="text"><br>
+						<label>Tên:</label><br>
+						<input type="text"><br>
+						<label>Email:</label><br>
+						<input type="email"><br>
+						<label>Số Điện Thoại:</label>
+						<a href="/.">Thêm</a><br>
+						<label>Tên Shop:</label><br>
+						<input type="text"><br>
+						<label>Giới Tính:</label>
+						<input type="radio" id="nam" class="border" value="nam" name="lady">
+						<label for="nam">Nam</label>
+						<input type="radio" id="nu" class="border" name="lady">
+						<label for="nu">Nữ</label>
+						<input type="radio" id="khac" class="border" name="lady">
+						<label for="khac">Khác</label><br>
+						<label>Ngày Sinh:</label><br>
+						<input type="date"><br><br>
+						<input type="submit" value="save" class="danger">
+					</form>
 				</div>
+				<div class="col-12 col-sm-1"></div>
 			</div>
 		</div>
 		<div class="footer border">

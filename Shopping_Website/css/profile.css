@@ -71,3 +71,19 @@
 	width: 160px;
 	height:150px;
 }
+.my-profile {
+	background-color: white;
+	padding-left: 3%;
+	padding-bottom: 5%;
+	padding-top: 2%;
+	width: 50%;
+}
+.profile {
+	background-color: #D8D8D8;
+	padding-top: 2%;
+	padding-bottom: 5%;
+}
+.red-my-profile {
+    font-size: 15px;
+    display: block;
+}
