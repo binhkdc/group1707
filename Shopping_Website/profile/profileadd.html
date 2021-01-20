@@ -8,7 +8,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="css/profile.css">
+		<link rel="stylesheet" href="profile.css">
 		<script src="https://kit.fontawesome.com/67b41cffa0.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
@@ -42,47 +42,39 @@
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="What you find..?" aria-label="Search">
+					<input class="form-control mr-sm-2" type="search" placeholder="What you find..?" aria-label="Search"/>
 					<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
 				</form>
 			</div>
 		</div>
 		<div class="container-grid profile">
 			<div class="row">
-				<div class="col-12 col-sm-2">
-					<p><i class="fas fa-user"></i><a href=""> Tài Khoản Của Tôi</a></p>
-					<ul class="list-unstyled">
-						<li><a class="red-my-profile" href="">Hồ Sơ</a></li>
-						<li><a class="red-my-profile" href="">Ngân Hàng</a></li>
-						<li><a class="red-my-profile" href="">Địa Chỉ</a></li>
-						<li><a class="red-my-profile" href="">Thêm Mật Khẩu</a></li>
-					</ul>
+				<div class="col-12 col-sm-2" >
+					<p><i class="fas fa-user"></i><a href=""> My account</a></p>
+					<div class="red-my-profile">
+						<a href="">Profile</a><br>
+						<a href="">Bank</a><br>
+						<a href="">Adress</a><br>
+						<a href="">Add password</a>
+					</div>
 				</div>
 				<div class="col-12 my-profile col-sm-9">
-					<h4>Hồ Sơ Của Tôi</h4>
-					<p>Quản lý thông tin hồ sơ để bảo mật tài khoản</p><hr>
-					<form action="/action_page.php">
-						<label>Tên Đăng nhập:</label><br>
-						<input type="text"><br>
-						<label>Tên:</label><br>
-						<input type="text"><br>
-						<label>Email:</label><br>
-						<input type="email"><br>
-						<label>Số Điện Thoại:</label>
-						<a href="/.">Thêm</a><br>
-						<label>Tên Shop:</label><br>
-						<input type="text"><br>
-						<label>Giới Tính:</label>
-						<input type="radio" id="nam" class="border" value="nam" name="lady">
-						<label for="nam">Nam</label>
-						<input type="radio" id="nu" class="border" name="lady">
-						<label for="nu">Nữ</label>
-						<input type="radio" id="khac" class="border" name="lady">
-						<label for="khac">Khác</label><br>
-						<label>Ngày Sinh:</label><br>
-						<input type="date"><br><br>
-						<input type="submit" value="save" class="danger">
-					</form>
+					<div>
+						<h1>Enter your phone number</h1><br>
+						<p>For better security, please follow the steps below to enter your phone number.</p>
+						<hr>
+						<div class="text-left">
+							<form action="/action_page.php">
+								<label>New tel: </label><br>
+								<input type="text" class="" autocomplete="tel" id="phone-number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="enter your phone number" value><br>
+								<label>Verification code:</label><br>
+								<input type="text" autocomplete="off" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Verification code" id="phone-number">
+								<button type="button" id="phone-number">send verification code</button><br><br>
+								<button class="btn btn-danger" type="submit" id="phone-number">Xác Nhận</button><br>
+							</form>
+							
+						</div>
+					</div>
 				</div>
 				<div class="col-12 col-sm-1"></div>
 			</div>
@@ -91,7 +83,7 @@
 			<div class="sendmail-box">
 				<form action="#" method="post">
 					<p>Send your e-mail here to receive <em>deal sale 100%</em></p>
-					<input type="email" name="email" id="email">
+					<input type="email" name="email" id="email"/>
 					<button type="submit"><i class="far fa-paper-plane"></i></button>
 				</form>
 			</div>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>profile</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="profile.css">
+		<script src="https://kit.fontawesome.com/67b41cffa0.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="index.html">Logo BRAND</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
+					<li class="nav-item" >
+						<div class="dropdown">
+							<a class="nav-link" href="shop.html">SHOP</a>
+							<div class="dropdown-content">
+								<a href="#">ALL PRODUCTS</a>
+								<a href="#">TOPS</a>
+								<a href="#">BOTTOMS</a>
+								<a href="#">OUTERWEAR</a>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ACCOUNT</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="profile.html">Profile</a>
+							<a class="dropdown-item" href="signin.html">Sign In</a>
+							<a class="dropdown-item" href="signup.html">Sign Up</a>
+						</div>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="What you find..?" aria-label="Search"/>
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="container-grid profile">
+			<div class="row">
+				<div class="col-12 col-sm-2" >
+					<p><i class="fas fa-user"></i><a href=""> My account</a></p>
+					<div class="red-my-profile">
+						<a href="">Profile</a><br>
+						<a href="">Bank</a><br>
+						<a href="">Adress</a><br>
+						<a href="">Add password</a>
+					</div>
+				</div>
+				<div class="col-12 my-profile row col-sm-9">
+					<div class="col-12">
+					<h4>My profile</h4>
+					<p>Manage profile information for account security</p><hr>
+					</div>
+					<div class="col-12 col-sm-8">
+						<form action="/action_page.php">
+							<label><b>Username:</b></label><br>
+							<input type="text" class="form-control"/><br>
+							<label><b>Name:</b></label><br>
+							<input type="text" class="form-control"/><br>
+							<label><b>Email:</b></label><br>
+							<input type="email" class="form-control"/><br>
+							<label><b>Phone:</b></label>
+							<a href="profileadd.html">Add</a><br>
+							<label><b>Shop name:</b></label><br>
+							<input type="text" class="form-control"/><br>
+							<label><b>Giới Tính:</b></label>
+							<input type="radio" id="nam" class="border" value="nam" name="lady"/>
+							<label for="nam">Male</label>
+							<input type="radio" id="nu" class="border" name="lady"/>
+							<label for="nu">Female</label>
+							<input type="radio" id="khac" class="border" name="lady"/>
+							<label for="khac">Other</label><br>
+							<label><b>Date:</b></label><br>
+							<input type="date" class="form-control"/><br><br>
+							<input type="submit" value="save" class="btn btn-success btn--m btn--inline"/>
+						</form>
+					</div>
+					<div class="col-12 col-sm-4 border-left text-center">
+						<img class="avatar" src="avatar.jpg"><br><br>
+						<button type="button" id="myfile" class="btn btn-success btn--m btn--inline">Add photos</button>
+					</div>
+				</div>
+				<div class="col-12 col-sm-1"></div>
+			</div>
+		</div>
+		<div class="footer border">
+			<div class="sendmail-box">
+				<form action="#" method="post">
+					<p>Send your e-mail here to receive <em>deal sale 100%</em></p>
+					<input type="email" name="email" id="email"/>
+					<button type="submit"><i class="far fa-paper-plane"></i></button>
+				</form>
+			</div>
+			<p class="copyright"><i>Copyright&#169; Group1 All Rights Resevered<i></p>
+		</div>
+	</body>
+</html>
