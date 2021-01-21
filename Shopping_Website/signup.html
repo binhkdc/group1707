@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<link rel="style.css" href="styles">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<title>Registration_Form</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>SIGN UP</h1>
+				<div class="row">
+					<div class="col-12 col-sm-6">
+						<img src="images/anhnen.jpg" class="w-100">
+					</div>
+						<div class="col-12 col-sm-6">
+						<form action="action_page.php" method="post">
+							<p>Full Name</p>
+							<input type="text" name="hoten" class="input1"/>
+							<p>User name</p>
+							<input type="text" name="tdn" class="input1"/>
+							<!--<p class="xacnhanten">Ten dang nhap da ton ta.</p>-->
+							<p>Password</p>
+							<input type="password" name="mk" class="input1"/>
+							<p>Confirm password</p>
+							<input type="password" name="xnmk" class="input1"/>
+							<!-- <p class="xacnhanten">Ten dang nhap da ton ta.</p>-->	
+							<p>Sex</p>
+							<span>
+								<input type="radio" name="gioitinh" value="1" checked="checked"/>male
+								<input type="radio" name="gioitinh" value="0" />Female</span>	
+							<p>Email: </p>
+							<input type="text" name="email" class="input1"/>
+							<p>Address</p>
+							<textarea name="diachi"></textarea>
+							<p>Information Terms</p>
+							<div>
+								<input type="button" value="Hide" class="hide"/>
+								<input type="button" value="Show" class="show"/><br>
+								<input type="button" id="dieukhoan" value="Read the terms"/></br>
+								<input type="checkbox">
+								<label>I accept the term</label><br>
+								<input type="submit" name="xn" class="nut" value="Registration">
+								<input type="reset" name="huy" class="nut" value="Cancel"/>
+							</div>
+						</form>						
+						</div>	
+				</div>						
+			</div>
+		</div>
+	</body>
+<html>
