@@ -1,18 +1,78 @@
-<html>
+<html lang="en">
 	<head>
-		<link rel="style.css" href="styles">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		<title>Registration_Form</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/67b41cffa0.js" crossorigin="anonymous"></script>  
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){
+			$(window).scroll(function(){
+			if($(window).scrollTop() > 60 ){
+			$('.my-navbar').addClass('navbar-scroll');
+			}
+			else{
+			$('.my-navbar').removeClass('navbar-scroll');
+			}
+			});
+			});
+		</script>  
 	</head>
 	<body>
-		<div class="container">
-			<h1>SIGN UP</h1>
-				<div class="row">
+		<div class="bg-dark">
+			<header>
+				<div class="container-fluid menu">
+					<nav class="navbar navbar-expand-lg my-navbar">
+						<a class="navbar-brand" href="#">Orange</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+							<ul class="navbar-nav m-auto">
+								<li class="nav-item active">
+									<a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="about.html">About</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">Contact</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										My Account
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<a class="dropdown-item" href="profile.html">Profile</a>
+										<a class="dropdown-item" href="signup.html">Sign out</a>
+									</div>
+								</li>  
+							</ul>
+						</div>
+						<div class="wrapper">
+							<div class="searchbox">
+								<input type="text" class="input" placeholder="What u find..?"> 
+								<div class="searchbtn">
+									<i class="fas fa-search"></i>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>  
+			</header>
+			<div class="container">
+				<h1>SIGN UP</h1>
+				<div class="row  jumbotron">
 					<div class="col-12 col-sm-6">
 						<img src="images/anhnen.jpg" class="w-100">
 					</div>
-						<div class="col-12 col-sm-6">
+					<div class="col-12 col-sm-6">
 						<form action="action_page.php" method="post">
 							<p>Full Name</p>
 							<input type="text" name="hoten" class="input1"/>
@@ -43,9 +103,49 @@
 								<input type="reset" name="huy" class="nut" value="Cancel"/>
 							</div>
 						</form>						
-						</div>	
+					</div>	
 				</div>						
 			</div>
+			<footer>
+				<div class="container-fluid">
+					<div class="row ml-auto justify-align-center">
+						<div class="col-3">
+							<h4>STAY IN TOUCH</h4>
+							<div class="footer-content">
+								<p><i class="far fa-envelope"></i> sales@example.com<br><i class="far fa-envelope"></i> support@example.com</p>
+								<p><i class="fas fa-phone-alt"></i> (+84 375-191-847)</p>
+							</div>
+						</div>
+						<div class="col-3">
+							<h4>NEWSLETTER</h4>
+							<div class="footer-content">
+								<p>Stay update with our new lastest!</p>
+								<form action="#" method="POST">
+								<input type="email" placeholder="Enter your email here..">
+								<button type="submit"><i class="fas fa-paper-plane"></i></button>
+							</div>
+						</div>
+						<div class="col-3">
+							<h4>OPENING HOURS</h4>
+							<div class="footer-content">
+								<p><i class="far fa-clock"></i> Monday: closed</p>
+								<p><i class="far fa-clock"></i> Tues-fri: 8 A.M - 12 A.M</p>
+								<p><i class="far fa-clock"></i> Sat-sun: 12 A.M - 18 P.M</p>
+								<p><i class="far fa-clock"></i> Holydays: fulltime</p>
+							</div>
+						</div>
+						<div class="col-3">
+							<h4>CONTACT US</h4>
+							<div class="footer-content">
+								<a href="#"><i class="fab fa-youtube"></i> Youtube</a><br>
+								<a href="#"><i class="fab fa-facebook-square"></i> Facebook</a><br>
+								<a href="#"><i class="fab fa-twitter"></i> Twitter</a><br>
+								<a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
 	</body>
 <html>
